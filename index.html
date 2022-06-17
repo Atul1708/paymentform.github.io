@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Concert+One&family=Handlee&family=Lobster&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&family=Secular+One&display=swap"
+        rel="stylesheet">
+    <style>
+        h1 {
+            background: linear-gradient(to right, #ff8a00 0%, #dd4c4f 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display:block;
+            width:294px;
+            margin: auto;
+            /* background-color: rgb(20, 161, 204); */
+        }
+
+        body {
+            font-family: 'Secular One', sans-serif;
+            font-size: 20px;
+            border-radius: 5px;
+            background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+            color: black;
+            margin: 15px;
+        }
+
+        .form-group {
+            height: 1121px;
+            width: 1211px;
+            box-shadow: 9px 8px 50px black;
+            display: block;
+            margin: auto;
+            background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
+            border-radius: 10px;
+        }
+
+        h2 {
+            background: linear-gradient(to right, #ff8a00 0%, #dd4c4f 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display:block;
+            width: 303px;
+            margin:auto;
+            font-family: 'Advent Pro', sans-serif;
+            /* background-color:rgb(169, 169, 169); */
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="password"],
+        select {
+            font-family: 'Secular One', sans-serif;
+            margin: 5px;
+            padding: 7px;
+            border-radius: 5px;
+            border-color: black;
+            font-size: 20px;
+        }
+
+        input[type="submit"] {
+            padding: 8px;
+            border: 2px solid black;
+            cursor: pointer;
+            background-color:white;
+            border-radius: 5px;
+            display: block;
+            margin: auto;
+            width: 145px;
+            font-family: 'Secular One', sans-serif;
+        }
+
+        input[type="submit"]:hover {
+            background-color: black;
+            color:white;
+            transform: scale(1.1);
+        }
+
+        .atul {
+            padding: 10px;
+            /* background-color: bisque; */
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" class="form-group">
+        <h1>PAYMENT FORM</h1>
+        <br>
+        <h2>USER INFORMATION</h2>
+        <P>
+            First name: <input type="text" name="first name" id="first name" required>
+            Middle name: <input type="text" name="middle name" id="middle form">
+            Last name: <input type="text" name="last name" id="last name">
+        </P>
+        <fieldset>
+            <legend>Gender</legend>
+            <p>
+                Male:<input type="radio" name="Gender" id="male">
+                Female:<input type="radio" name="Gender" id="female">
+            </p>
+        </fieldset>
+        <p class="atul">
+            Address: <textarea name="address" id="address" cols="100" rows="5"></textarea>
+        </p>
+
+        <p>
+            City:<input type="text" name="city" id="city">
+        </p>
+        <p>
+            Pincode:<input type="number" name="pincode" id="pincode" required>
+        </p>
+        <hr>
+        <h2>PAYMENT INFORMATION</h2>
+        <P>
+            Card number:<input type="number" name="card number" ud="card number">
+        </P>
+        <p>
+            Card type: <select name="card type" id="card type">
+                <option value="">--SELECT YOUR CARD-TYPE</option>
+                <option value="VISA">VISA</option>
+                <option value="RUPAY">RUPAY</option>
+                <option value="MASTERCARD">MASTERCARD</option>
+                <option value="OTHER">OTHER</option>
+            </select>
+        </p>
+        <P>
+            CVV: <input type="password" name="cvv" id="cvv" REQUIRED>
+        </P>
+        <HR>
+        <p>
+            ACCEPT COMPANY POLICIES: <INPUT TYPE="RADIO" NAME="POLICY" ID="ABOUT COMPANY" required></p>
+        <P>DON'T ACCEPT COMPANY POLICIES:<INPUT TYPE="RADIO" NAME="POLICY" ID="ABOUT COMPANY">
+        </p>
+        <input id="demo" type="submit" value="paynow" onclick="click();">
+    </form>
+<script>
+    document.getElementById("demo").addEventListener("mouseover", mouseOver);
+    function click() {
+        alert ("click on me to pay");
+        
+    }
+</script>
+</body>
+
+</html>
